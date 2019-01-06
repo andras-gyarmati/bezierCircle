@@ -23,7 +23,7 @@ void draw() {
   beginShape();
   vertex(p1.x, p1.y);
   bezierVertex(b(75), b(-100), b(125), b(-20), p2.x, p2.y);
-  bezierVertex(b(58), b(107), b(-37), b(125), p3.x, p3.y);
+  bezierVertex(b(56), b(108), b(-40), b(125), p3.x, p3.y);
   bezierVertex(b(-121), b(-8), b(-86), b(-98), p1.x, p1.y);
   endShape();
 }

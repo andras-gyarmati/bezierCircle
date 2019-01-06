@@ -44,4 +44,18 @@ class Circle {
   float b(float scale) {
     return size * scale / 100f;
   }
+
+  void mouseDragged_(float x, float y) {
+    for (ArrayList<PVector> segment : circleSegments) {
+      if (PVector.dist(segment.get(0), new PVector(x, y)) < 10) {
+        segment.get(0).set(x, y);
+        return;
+      }
+      if (PVector.dist(segment.get(1), new PVector(x, y)) < 10) {
+        segment.get(1).set(x, y);
+      }
+    }
+  }
 }
+//IDEA: start the controllpoints from their anchorpoints?
+//IDEA: create a segment class
